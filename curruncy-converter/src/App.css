@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1{
+  margin: 0;
+  margin-bottom: .5rem ;
+}
+
+.input{
+  border: 2px solid #333;
+  border-radius: .3rem;
+  padding: .25rem;
+  width: 7rem;
+}
+
+select{
+  margin-left: 0.5rem;
+}
