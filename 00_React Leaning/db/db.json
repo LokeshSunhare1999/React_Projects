@@ -1,0 +1,40 @@
+{
+    "product":[
+       {
+        "id": 1,
+        "name": "Samsung",
+        "color": "black",
+        "price": 15000,
+        "category": "Mobile",
+        "brand": "Samsung",
+        "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+       },
+       {
+        "id": 2,
+        "name": "Samsung F3",
+        "color": "black",
+        "price": 15000,
+        "category": "Mobile",
+        "brand": "Samsung",
+        "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+       },
+       {
+        "id": 3,
+        "name": "T-shirt",
+        "color": "black",
+        "price": 15000,
+        "category": "Mobile",
+        "brand": "Samsung",
+        "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+       },
+       {
+        "id": 4,
+        "name": "Sports Shoes",
+        "color": "black",
+        "price": 15000,
+        "category": "Mobile",
+        "brand": "Samsung",
+        "photo": "https://herakoi.com/wp-content/uploads/sites/3/2020/12/dummy-product-09.jpg"
+       }
+    ]
+}
