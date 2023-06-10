@@ -1,11 +1,10 @@
 import './App.css';
-import Login from './Screens/Auth/Login';
-import SignUp from './Screens/Auth/SignUp';
+import { Routings } from './Router/Routings';
+
 function App() {
   return (
     <div className="App">
-     <SignUp/>
-     <Login/>
+     <Routings/>
     </div>
   );
 }
