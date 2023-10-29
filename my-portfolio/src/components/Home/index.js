@@ -9,7 +9,7 @@ import './index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['l', 'o', 'k', 'e', 's', 'h']
+  const nameArray = ['L', 'o', 'k', 'e', 's', 'h']
   const jobArray = [
     'w',
     'e',
@@ -27,11 +27,11 @@ const Home = () => {
     '.',
   ]
 
-//   useEffect(() => {
-//     return setTimeout(() => {
-//       setLetterClass('text-animate-hover')
-//     }, 4000)
-//   }, [])
+  //   useEffect(() => {
+  //     return setTimeout(() => {
+  //       setLetterClass('text-animate-hover')
+  //     }, 4000)
+  //   }, [])
 
   return (
     <>
@@ -42,11 +42,11 @@ const Home = () => {
             <span className={`${letterClass} _12`}>i,</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img
+            <span className={`${letterClass} _14`}>'m&nbsp;</span>
+            {/* <img
               src={LogoTitle}
               alt="JavaScript Developer Name, Web Developer Name"
-            />
+            /> */}
             <AnimationLetters
               letterClass={letterClass}
               strArray={nameArray}

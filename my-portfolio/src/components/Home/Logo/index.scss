@@ -26,7 +26,8 @@
     margin: auto;
     width: 100%;
     opacity: 0;
-    transform: rotateZ(30deg) !important;
+    border-radius: 8px;
+    // transform: rotateZ(30deg) !important;
     z-index: 1;
   }
 }
