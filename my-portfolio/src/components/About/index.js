@@ -1,4 +1,3 @@
-import './index.scss'
 import AnimationLetters from '../AnimationLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -11,6 +10,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
+import './index.scss'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -42,9 +42,9 @@ const About = () => {
             improving my chops one design problem at a time.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            If I need to define myself in one sentence that would be a calm,
+            front-end developer with ambitious dreams, a passion for playing
+            badminton, and tech-obsessed !
           </p>
         </div>
         <div className="stage-cube-cont">

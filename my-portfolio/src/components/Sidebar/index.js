@@ -12,7 +12,6 @@ const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
       <img src={LokeshLogo} alt="logo" />
-      {/* <img className="sub-logo" src={LogoSubtitle} alt="slobodan" /> */}
       <h3 className="sub-logo">Lokesh</h3>
     </Link>
     <nav>
