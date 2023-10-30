@@ -48,8 +48,8 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in full-time opportunities - especially ambitious or
-            large project. However, if you have other request or question, don't
+            I am interested in full-time remote, hybird and work from office
+            opportunities. However, if you have other request or question, don't
             hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
