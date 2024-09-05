@@ -1,0 +1,34 @@
+$color-brown: #74613C;
+$color-cream: #F5F3EE;
+
+.admin-dashboard {
+    background: $color-cream;
+    height: 100%;
+}
+
+
+.event-table {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-left: 330px;
+    padding-top: 120px;
+    padding-right: 30px;
+    background: $color-cream;
+    z-index: -1;
+}
+
+.event-content {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-left: 330px;
+    padding-top: 121px;
+    padding-right: 30px;
+    background: $color-cream;
+    z-index: -1;
+}
+
+.page-wrapper {
+    padding: 15px 35px;
+}

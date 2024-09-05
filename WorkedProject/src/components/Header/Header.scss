@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+.HeaderDiv {
+    position: fixed;
+    top: 0px;
+    left: 300px;
+    width: calc(100% - 235px);
+    z-index: 7;
+
+    .HeaderNav {
+        height: 90px;
+        width: 96%;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 5px #CCCCCC;
+        opacity: 1;
+
+        .MasterContainer {
+            justify-content: space-between;
+
+            .h1 {
+                text-align: left;
+                font: normal normal 600 22px/31px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                cursor: pointer;
+
+            }
+
+            .iconBread {
+                color: #AAAAAA;
+                opacity: 1;
+                top: 3px;
+                position: relative;
+            }
+
+            .firstBread {
+                text-align: left;
+                font: normal normal 600 22px/31px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #AAAAAA;
+                opacity: 1;
+
+            }
+
+            .lastBread {
+                text-align: left;
+                font: normal normal 600 22px/31px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                margin-right: 0px;
+            }
+
+            .MasterDiv {
+                flex: 0.05;
+
+                .Notification {
+                    cursor: pointer;
+                    display: flex;
+                    margin: auto;
+
+                    .Count {
+                        position: absolute;
+                        top: 28px;
+                        right: 284px;
+                        padding: 2px 5px 3px 5px;
+                        border-radius: 70%;
+                        background-color: red !important;
+                        color: white !important;
+                        height: 16px;
+                        width: 16px;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .CountValue {
+                        font-size: 14px;
+                        margin-top: -5px;
+                    }
+                }
+
+                .h1 {
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #74613C;
+                    opacity: 1;
+                }
+            }
+
+            .DropDownDiv {
+                list-style: none;
+
+                .dropdown-menu.show {
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 6px #00000029;
+                    border-radius: 4px;
+                    opacity: 1;
+                    width: 100%;
+
+                    .dropdown-item {
+                        .displayFlex {
+                            display: flex;
+                            align-items: center;
+
+                            .span {
+                                text-align: left;
+                                font: normal normal normal 14px/24px Open Sans !important;
+                                letter-spacing: 0px;
+                                color: #222222;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                .fontletter {
+                    text-align: left;
+                    font: normal normal medium 14px/20px Gotham;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+
+
+                    .profilImage {
+                        width: 36px;
+                        height: 36px;
+                        object-fit: none;
+                    }
+
+                    .arrowIcon {
+                        margin-left: 10px;
+                    }
+                }
+
+                .fontletter:hover {
+                    .arrowIcon {
+                        margin-left: 10px;
+                        transform: rotate(180deg);
+                    }
+                }
+
+                button {
+                    background-color: #FFFFFF;
+                    border-radius: 4px;
+                    color: #000000;
+                    border: none;
+                    outline: none;
+                }
+
+                button:hover {
+                    background-color: #FFFFFF;
+                    border-radius: 4px;
+                    color: #000000;
+                }
+
+                .DropDwonItem {
+                    .span {
+                        text-align: left;
+                        font: normal normal normal 14px/24px Open Sans !important;
+                        letter-spacing: 0px;
+                        color: #222222;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1275px) and (max-width: 1430px) {
+    .HeaderDiv {
+        position: fixed;
+        top: 0px;
+        left: 300px;
+        width: calc(100% - 235px);
+        z-index: 7;
+
+        .HeaderNav {
+            height: 90px;
+            width: 96%;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 5px #CCCCCC;
+            opacity: 1;
+
+            .MasterContainer {
+                justify-content: space-between;
+
+                .h1 {
+                    text-align: left;
+                    font: normal normal 600 18px/31px Noto-Serif-JP;
+                    letter-spacing: 0px;
+                    color: #74613C;
+                    opacity: 1;
+                    cursor: pointer;
+
+                }
+
+                .iconBread {
+                    color: #AAAAAA;
+                    opacity: 1;
+                    top: 3px;
+                    position: relative;
+                }
+
+                .firstBread {
+                    text-align: left;
+                    font: normal normal 600 18px/31px Noto-Serif-JP;
+                    letter-spacing: 0px;
+                    color: #AAAAAA;
+                    opacity: 1;
+
+                }
+
+                .lastBread {
+                    text-align: left;
+                    font: normal normal 600 18px/31px Noto-Serif-JP;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}

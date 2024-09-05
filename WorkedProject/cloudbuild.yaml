@@ -1,0 +1,61 @@
+steps:
+- id: Docker build
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', '${_REPO_REGION}/${_PROJ_ID}/${_REPO_NAME}/${_SERVICE_NAME}', '.']
+
+- id: Container image push
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '${_REPO_REGION}/${_PROJ_ID}/${_REPO_NAME}/${_SERVICE_NAME}']
+
+- id: Cloud run deploy
+  name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - '${_SERVICE_NAME}'
+  - '--image'
+  - '${_REPO_REGION}/${_PROJ_ID}/${_REPO_NAME}/${_SERVICE_NAME}'
+  - '--port'
+  - '80'
+  - '--region'
+  - '${_REGION}'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
+  - '--service-account'
+  - '${_SERVICE_ACCOUNT}'
+  - '--max-instances'
+  - '5'
+  - '--timeout'
+  - '60'
+  - '--set-secrets'
+  - 'SECRET_KEY=${_SECRET_ID}:latest' 
+  allow_failure: true
+
+- id: publish to pubsub
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      # Get the Git username
+      git_username=$(git show -s --format='%an' $COMMIT_SHA)
+      
+      url=$(gcloud builds describe $BUILD_ID --format='value(logUrl)')
+      message="$BUILD_ID,$PROJECT_ID,$REPO_NAME,$BRANCH_NAME,$COMMIT_SHA,$url,$_WEBEX_BOT_TOKEN,$_WEBEX_BOT_ROOM,$git_username"
+      gcloud pubsub topics publish projects/jenkins-ci-cd-193914/topics/webex-notification-topic --message "$message"
+  
+images:
+- ${_REPO_REGION}/${_PROJ_ID}/${_REPO_NAME}/${_SERVICE_NAME}
+
+substitutions:
+  _REPO_REGION: asia-docker.pkg.dev
+  _REPO_NAME: dev-web-admin-repo
+  _SERVICE_NAME: dev-web-admin
+  _REGION: asia-southeast1
+  _PROJ_ID: ananda-resort-187
+  _SERVICE_ACCOUNT: sa-ananda-resort-187-dev@ananda-resort-187.iam.gserviceaccount.com
+  _SECRET_ID: dev-web-admin-secret
+  _WEBEX_BOT_TOKEN: NjYyNzZiYTUtYWRhMi00NDE4LTk2MmEtMmYwZjhiZDQ0ZjM4NTc3NGE3ZTItODA3_PF84_c095076e-5f06-467d-a3d8-fb027d14c841
+  _WEBEX_BOT_ROOM: Y2lzY29zcGFyazovL3VzL1JPT00vZGRkZmY4YjAtMjZmNS0xMWVlLWE2NTItMmYwN2Y5MWY0YWIz
+  

@@ -1,0 +1,124 @@
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: #F5F5F5;
+
+
+.BlogsLevelDiv {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+    .selButton {
+        background: #74613C;
+        border: 1px solid #74613C;
+        border-radius: 8px;
+        margin: 0px 10px;
+        height: 45px;
+        padding: 0px 19px;
+        color: #fff;
+    }
+
+    .UnselButton {
+        background-color: transparent;
+        border: 1px solid #DDDDDD;
+        border-radius: 8px;
+        margin: 0px 10px;
+        height: 45px;
+        padding: 0px 19px;
+        color: #000000;
+    }
+
+    .selButton:focus,
+    .UnselButton:focus {
+        outline: none;
+        color: #fff;
+        border-color: #74613C;
+        box-shadow: none;
+    }
+
+    .separator {
+        border-right: 1px solid #AAAAAA;
+        opacity: 1;
+        margin: 0px 15px 0px 5px;
+    }
+}
+
+.BlogsBox {
+    .MuiTableCell-head {
+
+        span {
+            text-align: left;
+            letter-spacing: 0px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #AAAAAA !important;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+    }
+
+    .react-select {
+        outline: initial;
+        box-shadow: none;
+
+        .react-select__control {
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            outline: initial;
+            box-shadow: none;
+            width: 90px;
+            height: 45px;
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: black;
+            }
+        }
+
+        .react-select__control--is-focused.react-select__control--menu-is-open {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .list-group {
+        background-color: transparent;
+
+        .list-group-item {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .ViewEdit {
+            color: #74613C;
+            width: 65px;
+            margin-right: 5px;
+        }
+
+        .Delete {
+            width: 65px;
+            color: #FF2F2F;
+        }
+    }
+
+
+    .list-group-item:hover {
+        background-color: transparent;
+    }
+
+    .list-group:hover {
+        background-color: transparent;
+    }
+}

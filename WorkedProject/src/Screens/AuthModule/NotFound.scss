@@ -1,0 +1,33 @@
+.notFoundContainer{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    .imgContainer{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        .roboDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+    }
+    .textContainer{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        .errorMainDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .errorSubText{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+    }
+}

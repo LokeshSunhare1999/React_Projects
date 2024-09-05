@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: #F5F5F5;
+
+
+.LevelDiv {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+    .FormGroup {
+        position: relative;
+        display: -webkit-inline-box;
+        align-self: center;
+        margin: 0px !important;
+
+        .form-label {
+            cursor: text;
+            padding: 0px !important;
+            color: #171725;
+            font-size: 16px;
+            font-weight: bold;
+            text-align-last: center;
+            position: relative;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .react-select {
+            outline: initial;
+            box-shadow: none;
+            text-align: left;
+
+            .ActiveClass {
+                color: #31C52B;
+            }
+
+            .InactiveClass {
+                color: #FF2F2F;
+            }
+
+            .react-select__control {
+                border-radius: 8px;
+                border: 1px solid #d7d7d7;
+                background: $color-Light-gray;
+                outline: initial;
+                box-shadow: none;
+                width: 180px !important;
+                height: 45px;
+                text-align-last: left;
+                font-weight: 400 !important;
+            }
+
+            .react-select__indicator-separator {
+                display: none;
+            }
+
+            .react-select__dropdown-indicator {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #74613C;
+                }
+            }
+
+            .react-select__control--is-focused.react-select__control--menu-is-open {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .DurationDiv {
+        margin-left: 20px;
+
+
+        .Dash {
+            font-weight: 600;
+            margin: 0px 8px;
+        }
+
+        .form-label {
+            cursor: text;
+            padding: 0px !important;
+            color: #171725;
+            font-size: 16px;
+            font-weight: bold;
+            text-align-last: center;
+            position: relative;
+            margin-top: 6px;
+            margin-right: 10px;
+        }
+    }
+
+    .separator {
+        border-right: 1px solid #AAAAAA;
+        opacity: 1;
+    }
+
+}
+
+.TeamMemberBox {
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+
+    .css-1bkf9mw-MuiPaper-root {
+        .css-wn7kgi-MuiToolbar-root {
+            background-color: white;
+            border-radius: 8px;
+        }
+    }
+
+    .MuiTableCell-head {
+
+        span {
+            text-align: left;
+            letter-spacing: 0px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #AAAAAA !important;
+            opacity: 1;
+        }
+    }
+
+    .css-15dnat5-MuiTableRow-root.Mui-selected {
+        background-color: white;
+    }
+
+    .normal {
+        color: red !important;
+    }
+
+    .gray {
+        color: #AAAAAA !important;
+    }
+
+    .css-15dnat5-MuiTableRow-root {
+        color: red !important;
+    }
+
+    .MuiTableBody-root {
+        .MuiTableCell-root {
+            // text-transform: lowercase !important;
+
+            .CheckNotClick {
+                cursor: no-drop !important;
+            }
+
+            .CheckClick {
+                cursor: pointer !important;
+            }
+
+            .gray {
+                color: #AAAAAA !important;
+            }
+
+            i:first-letter {
+                // text-transform: uppercase
+            }
+        }
+
+        .MuiTableCell-root-disabled {
+            text-transform: lowercase;
+            color: yellow;
+        }
+
+        .MuiTableCell-root:first-letter {
+            // text-transform: uppercase
+        }
+
+        .react-select {
+            text-transform: capitalize;
+        }
+    }
+
+    .react-select {
+        outline: initial;
+        box-shadow: none;
+
+        .ActiveClass {
+            color: #31C52B;
+        }
+
+        .InactiveClass {
+            color: #FF2F2F;
+        }
+
+        .react-select__control {
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            outline: initial;
+            box-shadow: none;
+            width: 116px !important;
+            height: 45px;
+            font-weight: 600;
+
+            .css-15lsz6c-indicatorContainer:focus {
+                padding: 0px 8px 0px 0px;
+            }
+
+            .css-1xc3v61-indicatorContainer {
+                padding: 0px 8px 0px 0px;
+            }
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__control--is-focused.react-select__control--menu-is-open {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .list-group {
+        justify-content: space-between;
+        background-color: transparent;
+
+        .list-group-item {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .ViewEditNotClick {
+            color: #74613C;
+            width: 65px;
+            cursor: no-drop;
+        }
+
+        .ViewEditClick {
+            color: #74613C;
+            width: 65px;
+            cursor: pointer;
+        }
+
+        .ViewEdit {
+            color: #74613C;
+            width: 65px;
+        }
+
+        .Delete {
+            color: #FF2F2F;
+            width: 70px;
+        }
+    }
+
+
+    .list-group-item:hover {
+        background-color: transparent;
+    }
+
+    .list-group:hover {
+        background-color: transparent;
+    }
+
+
+    .paginationBlock {
+        .css-1jqq78o-placeholder {
+            color: #000000 !important;
+        }
+
+
+        .rowsSelect {
+
+            .react-select__control {
+                width: 62px !important;
+
+                .css-1xc3v61-indicatorContainer {
+                    padding: 0px 10px 0px 0px !important;
+                }
+
+                .css-15lsz6c-indicatorContainer {
+                    padding: 0px 10px 0px 0px !important;
+                }
+            }
+        }
+    }
+}
+
+.TeamMember-modal-warning .modal-content {
+    width: 420px;
+    height: 265px;
+    margin: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #0000001A;
+    border-radius: 8px;
+    opacity: 1;
+    align-items: center;
+
+    .modal-header {
+
+        padding: 26px 0px 0px 0px;
+        margin: 0px 20px;
+
+        .modalText {
+            text-align: left;
+            font: normal normal 600 28px/29px Noto-Serif-JP;
+            letter-spacing: 0px;
+            color: #74613C;
+            opacity: 1;
+        }
+    }
+
+    .modal-body {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0px 0px 0px;
+        flex: 0;
+
+        .form-control:focus {
+            color: #212529;
+            border-color: #74613C;
+            box-shadow: none;
+        }
+
+        .Label {
+            text-align: left;
+            font: normal normal medium 16px/22px Gotham-Book;
+            letter-spacing: 0px;
+            font-size: large;
+            font-weight: 600;
+            color: #74613C;
+            opacity: 1;
+        }
+
+        .DeleteDesc {
+            letter-spacing: 0px;
+            font-size: large;
+            font-weight: 600;
+            opacity: 1;
+            text-align: left;
+            font: normal normal medium 14px/20px Gotham-Book;
+            color: #000000;
+        }
+
+        .Title {
+            width: 360px;
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            opacity: 1;
+            height: 48px;
+        }
+    }
+
+    .modal-footer {
+        border: none;
+        justify-content: center;
+        margin-top: 22px;
+        margin-bottom: 30px;
+
+        .redButton {
+            border: none;
+            color: #FF3333;
+            background: #FCE7E7 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 3px #CCCCCCB3;
+            border-radius: 8px;
+            opacity: 1;
+            height: 44px;
+            width: 118px;
+        }
+
+        .greenButton {
+            border: none;
+            color: #31C52B;
+            background: #E7F6E6 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 3px #CCCCCCB3;
+            border-radius: 8px;
+            opacity: 1;
+            width: 118px;
+            height: 44px;
+        }
+    }
+}

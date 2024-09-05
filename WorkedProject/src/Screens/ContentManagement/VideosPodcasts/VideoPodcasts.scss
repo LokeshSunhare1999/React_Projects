@@ -1,0 +1,525 @@
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: #F5F5F5;
+
+.VideoLevelDiv {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+
+    .selButton {
+        background: #74613C;
+        border: 1px solid #74613C;
+        border-radius: 8px;
+        margin: 0px 10px;
+        height: 45px;
+        padding: 0px 19px;
+        color: #fff;
+        outline: none;
+    }
+
+    .selButton:focus {
+        outline: none;
+    }
+
+    .UnselButton {
+        background-color: transparent;
+        border: 1px solid #DDDDDD;
+        border-radius: 8px;
+        margin: 0px 10px;
+        height: 45px;
+        padding: 0px 19px;
+        color: #000000;
+        outline: none;
+
+    }
+
+    .selButton:focus,
+    .UnselButton:focus {
+        outline: none;
+        color: #fff;
+        border-color: #74613C;
+        box-shadow: none;
+    }
+
+    .UnselButton:focus {
+        outline: none;
+    }
+
+    .separator {
+        border-right: 1px solid #AAAAAA;
+        opacity: 1;
+        margin: 0px 15px 0px 5px;
+    }
+
+}
+
+.VideoBox {
+    .css-1z0yl94-MuiToolbar-root {
+        background-color: white;
+    }
+
+    .css-1bkf9mw-MuiPaper-root {
+        background-color: white;
+    }
+
+    .css-wn7kgi-MuiToolbar-root {
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    .MuiTableCell-head {
+
+        span {
+            text-align: left;
+            letter-spacing: 0px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #AAAAAA !important;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+    }
+
+    .css-15dnat5-MuiTableRow-root.Mui-selected {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .react-select {
+        outline: initial;
+        box-shadow: none;
+
+        .ActiveClass {
+            color: #31C52B;
+        }
+
+        .InactiveClass {
+            color: #FF2F2F;
+        }
+
+        .react-select__control {
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            outline: initial;
+            box-shadow: none;
+            width: 116px;
+            height: 45px;
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__control--is-focused.react-select__control--menu-is-open {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .imgDivContent {
+        display: flex;
+        padding: 10px 0px;
+
+
+
+        .mainIcon {
+            width: 100px;
+            height: 100px;
+            background: transparent;
+            border-radius: 8px;
+            opacity: 1;
+            border: none;
+        }
+
+        .videoPlayIcon {
+
+            left: -87px;
+            position: relative;
+            top: 15px;
+        }
+    }
+
+    .titleText {
+        margin: 0px;
+        min-width: 170px;
+    }
+
+
+
+    .contentTypeText {
+        display: flex;
+        width: 89px;
+
+        ;
+
+        .othText {
+            margin: 0px;
+            text-transform: capitalize;
+
+        }
+
+        .rupeesText {
+            color: #74613C;
+            margin: 0px;
+            padding-left: 5px;
+            text-transform: capitalize;
+
+        }
+    }
+
+    .othText {
+        margin: 0px;
+        text-transform: capitalize;
+
+    }
+
+
+
+    .list-group {
+        justify-content: space-between;
+        background-color: transparent;
+
+        .list-group-item {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .ViewEditNotClick {
+            color: #74613C;
+            width: 65px;
+            cursor: no-drop;
+        }
+
+        .ViewEditClick {
+            color: #74613C;
+            width: 65px;
+            cursor: pointer;
+        }
+
+        .ViewEdit {
+            color: #74613C;
+            width: 65px;
+            cursor: pointer;
+        }
+
+        .Delete {
+            color: #FF2F2F;
+            width: 65px;
+        }
+    }
+
+
+    .list-group-item:hover {
+        background-color: transparent;
+    }
+
+    .list-group:hover {
+        background-color: transparent;
+    }
+}
+
+
+
+.viewContent-modal-warning .modal-content {
+    width: 840px;
+
+    margin: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #0000001A;
+    border-radius: 8px;
+    opacity: 1;
+
+    .modal-header {
+        border-bottom: 1px solid #AAAAAA;
+        padding: 15px 0px 0px 0px;
+        margin: 0px 20px;
+        display: flex;
+        align-items: baseline;
+
+        .modalText {
+            text-align: left;
+            font: normal normal 600 20px/29px Noto-Serif-JP;
+            letter-spacing: 0px;
+            color: #74613C;
+            opacity: 1;
+        }
+
+        .react-select {
+            outline: initial;
+            box-shadow: none;
+            margin-left: 10px;
+
+            .ActiveClass {
+                color: #31C52B;
+            }
+
+            .InactiveClass {
+                color: #FF2F2F;
+            }
+
+            .react-select__control {
+                border-radius: 8px;
+                border: 1px solid #31C52B;
+                background: #EFFBEE;
+                outline: initial;
+                box-shadow: none;
+                width: 120px;
+                height: 45px;
+            }
+
+            .react-select__indicator-separator {
+                display: none;
+            }
+
+            .react-select__dropdown-indicator {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #74613C;
+                }
+            }
+
+            .react-select__control--is-focused.react-select__control--menu-is-open {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .react-selectChange {
+            outline: initial;
+            box-shadow: none;
+            margin-left: 10px;
+
+            .ActiveClass {
+                color: #31C52B;
+            }
+
+            .InactiveClass {
+                color: #FF2F2F;
+            }
+
+            .react-select__control {
+                border-radius: 8px;
+                border: 1px solid #f92e05;
+                background: #fbeeee;
+                outline: initial;
+                box-shadow: none;
+                width: 120px;
+                height: 45px;
+            }
+
+            .react-select__indicator-separator {
+                display: none;
+            }
+
+            .react-select__dropdown-indicator {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #74613C;
+                }
+            }
+
+            .react-select__control--is-focused.react-select__control--menu-is-open {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+    }
+
+    .modal-body {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 0px 0px;
+        flex: 0;
+
+        .form-control:focus {
+            color: #212529;
+            border-color: #74613C;
+            box-shadow: none;
+        }
+
+        .Label {
+            text-align: left;
+            font: normal normal medium 16px/22px Gotham-Book;
+            letter-spacing: 0px;
+            font-weight: 500;
+            color: #74613C;
+            opacity: 1;
+        }
+
+        .Title {
+            width: 360px;
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            opacity: 1;
+            height: 48px;
+            font-weight: 500;
+            text-align: left;
+            font: normal normal medium 14px/20px Gotham-Book;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+
+        .small {
+            color: #df4b3b;
+            text-align: left;
+        }
+
+        .modalData {
+            .noVideoDiv {
+                width: 600px;
+                display: flex;
+                justify-content: center;
+                height: 238px;
+                align-items: center;
+
+                .textNoVideo {
+                    font-size: 30px;
+                    color: #a4a0a0;
+                    font-weight: 600;
+                }
+            }
+
+            .imgDivContent {
+                display: flex;
+
+                margin: 10px 20px;
+
+                .videoShow {
+                    border-radius: 8px;
+                }
+
+                .mainIcon {
+
+                    background: transparent;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                }
+
+                .videoPlayIcon {
+                    left: -87px;
+                    position: relative;
+                    top: 15px;
+                }
+            }
+
+            .dataContent {
+                display: flex;
+                display: flex;
+
+                padding: 10px 20px 0px 20px;
+
+                .firstCol {
+                    flex: 0.7;
+
+                    .titleTextData {
+                        display: flex;
+
+                        .headeTitle {
+                            padding-right: 5px;
+                            font: normal normal medium 16px/22px Gotham;
+                            letter-spacing: 0px;
+                            color: #74613C;
+                        }
+
+                        .othText {
+                            margin: 0px;
+                            text-transform: capitalize;
+
+                        }
+                    }
+                }
+
+                .secondCol {
+                    .titleTextData {
+                        display: flex;
+
+                        .headeTitle {
+                            padding-right: 5px;
+                            font: normal normal medium 16px/22px Gotham;
+                            letter-spacing: 0px;
+                            color: #74613C;
+                        }
+
+                        .contentTypeText {
+                            display: flex;
+                            width: 105px;
+
+                            .othText {
+                                margin: 0px;
+                            }
+
+                            .rupeesText {
+                                color: #74613C;
+                                margin: 0px;
+                                padding-left: 5px;
+                                text-transform: capitalize;
+
+                            }
+                        }
+
+                        .othText {
+                            margin: 0px;
+                            text-transform: capitalize;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-footer {
+        border: none;
+        justify-content: center;
+
+        padding: 0px 0px 15px 0px;
+
+        .redButton {
+            border: none;
+            color: #FF3333;
+            background: #FCE7E7 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 3px #CCCCCCB3;
+            border-radius: 8px;
+            opacity: 1;
+            height: 44px;
+            width: 118px;
+
+            .mainIcon {
+                margin-bottom: 1px;
+            }
+        }
+
+        .greenButton {
+            border: none;
+            color: #31C52B;
+            background: #E7F6E6 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 3px #CCCCCCB3;
+            border-radius: 8px;
+            opacity: 1;
+            width: 118px;
+            height: 44px;
+        }
+    }
+}

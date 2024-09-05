@@ -1,0 +1,81 @@
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: gray;
+
+.ViewCategory {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            padding: 20px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid greenyellow;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: black;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid gray;
+            margin: 0px 15px;
+        }
+
+        .card-body {
+            .DecDiv {
+                display: flex;
+
+                .FirstGroup {
+                    color: $color-Light-gray;
+                }
+
+                .list-group {
+                    border: none;
+
+                    .list-group-item {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

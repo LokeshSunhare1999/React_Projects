@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: #AAAAAA;
+
+.ViewProgram {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            padding: 18px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .programTitle {
+                text-transform: capitalize;
+            }
+
+            h4 {
+                text-align: left;
+                font: normal normal 600 20px/29px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                margin: 0px;
+            }
+
+            .RecipeHeaderFilter {
+                justify-content: right;
+            }
+
+            .selButton {
+                width: 120px;
+                background: #74613C;
+                border: 1px solid #74613C;
+                border-radius: 8px;
+                margin: 0px 10px;
+                height: 45px;
+                padding: 0px 19px;
+                color: #fff;
+            }
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #31C52B;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .react-selectChange {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #f92e05;
+                    background: #fbeeee;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid #AAAAAA;
+            opacity: 1;
+            margin: 0px 15px;
+        }
+
+        .card-body {
+            padding: 30px 0px;
+            padding-right: 30px;
+
+            .CoverImageContainer {
+                justify-content: space-between;
+
+                .ImageDiv {
+                    flex: 0.4;
+                    color: $color-Light-gray;
+
+                    .RecipeImage {
+                        width: 600px;
+                        height: 220px;
+                        border-radius: 10px;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .DecDiv {
+                display: flex;
+                flex: 0.6;
+                .FirstGroup {
+                    color: $color-Light-gray;
+                    min-width: 150px;
+                    text-transform: uppercase !important;
+                }
+
+                .SecondGroup {
+                    font-weight: 600;
+
+                    .nutrition {
+                        font-weight: 400 !important;
+                    }
+
+                    .levelText {
+                        text-transform: lowercase;
+                    }
+
+                    .levelText::first-letter {
+                        text-transform: uppercase;
+                        /* change first letter to uppercase */
+                    }
+
+                    .viewLink {
+                        text-align: left;
+                        text-decoration: underline;
+                        letter-spacing: 0px;
+                        color: #74613C;
+                        opacity: 1;
+                        padding-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                .list-group {
+                    border: none;
+
+                    .ingredientTitle {
+                        text-transform: capitalize;
+                    }
+
+                    .list-group-item {
+                        border: none;
+                    }
+                }
+
+                .LastGroup {
+
+                    display: inline-block;
+                    list-style-type: none;
+                    margin-top: 11px;
+
+
+                    .itemDiv {
+                        min-width: 130px;
+                    }
+
+                    .mainIcon {
+                        width: 150px;
+                        height: 150px;
+                        background: transparent;
+                        border-radius: 8px;
+                        opacity: 1;
+                        border: none;
+                    }
+
+                    .videoPlayIcon {
+                        left: 109px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1488px) {
+    .ViewProgram {
+        .card {
+            .card-body {
+                .CoverImageContainer {
+                    justify-content: space-between;
+
+                    .ImageDiv {
+
+                        color: $color-Light-gray;
+
+                        .RecipeImage {
+                            width: 450px;
+                            height: 220px;
+                            border-radius: 10px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

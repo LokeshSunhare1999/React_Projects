@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+.event-table {
+
+    .MasterTabsContainer {
+        position: relative;
+
+        .TabsDiv {
+            max-width: 52%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1.8fr;
+            margin-left: 25px;
+            height: 64px;
+            box-shadow: none;
+            border-radius: 8px 8px 0px 0px;
+            opacity: 1;
+            margin-bottom: -2px;
+            font: normal normal medium 18px/26px Gotham !important;
+
+            .separator {
+                border-right: 1px solid #ccc;
+
+                vertical-align: middle;
+            }
+
+            li {
+                height: 100%;
+                max-width: 220px;
+
+
+                button {
+                    height: 100%;
+                    width: 100%;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    opacity: 1;
+                    outline: none;
+                    font-size: 20px;
+                    font-weight: 500;
+
+
+                }
+
+                button.active {
+                    height: 100%;
+                    width: 100%;
+                    color: #FFFFFF;
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 1px 6px #0000001A;
+                    border-radius: 8px 8px 0px 0px;
+                    opacity: 1;
+                    outline: none;
+
+                    text-align: center;
+                    font: normal normal medium 20px/28px Gotham-Book !important;
+                    letter-spacing: 0px;
+                }
+            }
+
+            .mb-3 {
+                border: none;
+
+                .nav-item {
+                    width: 386px;
+
+                    .a {
+                        color: red;
+                    }
+                }
+
+                .nav-link {
+                    color: #AAAAAA;
+                    background-color: #fff;
+                    flex: 0.33;
+                }
+
+                .nav-link.active {}
+
+                .nav-link.active {
+                    color: #386CB5 !important;
+                    background-color: #fff;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 3px solid #386CB5;
+                }
+            }
+        }
+
+        .MasterButtonDiv {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            opacity: 1;
+
+            .addUser {
+                background: #74613C 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000026;
+                border-radius: 8px;
+                opacity: 1;
+                height: 44px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1275px) and (max-width: 1488px) {
+    .event-table {
+        .MasterTabsContainer {
+            position: relative;
+
+            .TabsDiv {
+                max-width: 52%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1.8fr;
+                margin-left: 25px;
+                height: 64px;
+                box-shadow: none;
+                border-radius: 8px 8px 0px 0px;
+                opacity: 1;
+                margin-bottom: -2px;
+
+                li {
+                    height: 100%;
+
+                    button {
+                        height: 100%;
+                        width: 100%;
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        outline: none;
+                        font-size: 15px !important;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .MasterButtonDiv {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                opacity: 1;
+
+                .addUser {
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 6px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 44px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 1489px) and (max-width: 1824px) {
+    .event-table {
+        .MasterTabsContainer {
+            .TabsDiv {
+                max-width: 52%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1.8fr;
+                margin-left: 25px;
+                height: 64px;
+                box-shadow: none;
+                border-radius: 8px 8px 0px 0px;
+                opacity: 1;
+                margin-bottom: -2px;
+
+                li {
+                    height: 100%;
+
+                    button {
+                        height: 100%;
+                        width: 100%;
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+                        opacity: 1;
+                        outline: none;
+                        font-size: 16px !important;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

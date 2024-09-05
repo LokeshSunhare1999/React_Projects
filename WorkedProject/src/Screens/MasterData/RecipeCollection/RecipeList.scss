@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: #F5F5F5;
+
+
+
+.AboutDiv {
+    padding: 15px 0px;
+    align-items: center;
+
+    .AboutTitle {
+        min-width: 165px;
+        text-align: left;
+        font: normal normal medium 16px/22px Gotham-Book;
+        letter-spacing: 0px;
+        color: #AAAAAA;
+        text-transform: uppercase;
+        opacity: 1;
+        font-weight: 500;
+    }
+
+    .AboutDesc {
+        text-align: left;
+        font: normal normal medium 16px/22px Gotham-Book;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding-right: 15px;
+    }
+
+    .LevelDiv {
+        text-align: right;
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+
+        .selButton {
+            width: 170px;
+            background: #74613C;
+            border: 1px solid #74613C;
+            border-radius: 8px;
+            margin: 0px 0px 0px 10px;
+            height: 45px;
+            padding: 0px 19px;
+            color: #fff;
+        }
+
+        .separator {
+            border-right: 1px solid #AAAAAA;
+            opacity: 1;
+        }
+    }
+
+}
+
+.RecipeDiv {
+
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+    .react-select {
+        outline: initial;
+        box-shadow: none;
+        margin-left: 10px;
+        z-index: 6;
+
+        .ActiveClass {
+            color: #31C52B;
+        }
+
+        .InactiveClass {
+            color: #FF2F2F;
+        }
+
+        .react-select__control {
+            border-radius: 8px;
+            border: 1px solid #31C52B !important;
+            background: #EFFBEE !important;
+            outline: initial;
+            box-shadow: none;
+            width: 120px;
+            height: 45px;
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__control--is-focused.react-select__control--menu-is-open {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .react-selectChange {
+        outline: initial;
+        box-shadow: none;
+        margin-left: 10px;
+        z-index: 6;
+
+        .ActiveClass {
+            color: #31C52B;
+        }
+
+        .InactiveClass {
+            color: #FF2F2F;
+        }
+
+        .react-select__control {
+            border-radius: 8px;
+            border: 1px solid #f92e05;
+            background: #fbeeee;
+            outline: initial;
+            box-shadow: none;
+            width: 120px;
+            height: 45px;
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__control--is-focused.react-select__control--menu-is-open {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.RecipeListBox {
+
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+
+    .MuiTableCell-head {
+
+        span {
+            text-align: left;
+            letter-spacing: 0px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #AAAAAA !important;
+            opacity: 1;
+        }
+    }
+
+    .MuiTableBody-root {
+        .MuiTableCell-root {
+            text-transform: lowercase;
+
+            i:first-letter {
+                text-transform: uppercase
+            }
+        }
+
+        .MuiTableCell-root:first-letter {
+            text-transform: uppercase
+        }
+
+        .react-select {
+            text-transform: capitalize;
+        }
+    }
+
+    .react-select {
+        outline: initial;
+        box-shadow: none;
+
+        .ActiveClass {
+            color: #31C52B;
+        }
+
+        .InactiveClass {
+            color: #FF2F2F;
+        }
+
+        .react-select__control {
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            outline: initial;
+            box-shadow: none;
+            width: 116px !important;
+            height: 45px;
+            font-weight: 600;
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__control--is-focused.react-select__control--menu-is-open {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .View {
+        color: #74613C;
+        cursor: pointer;
+        text-transform: capitalize !important;
+
+        .list-group {
+
+            background-color: transparent;
+
+            .list-group-item {
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+            .ViewEditNotClick {
+                color: #74613C;
+                width: 65px;
+                cursor: no-drop;
+            }
+
+            .ViewEditClick {
+                color: #74613C;
+                width: 65px;
+                cursor: pointer;
+            }
+
+            .ViewEdit {
+                color: #74613C;
+                width: 65px;
+                margin-right: 10px;
+            }
+
+            .Delete {
+                color: #FF2F2F;
+                width: 70px;
+            }
+        }
+    }
+
+    .paginationBlock {
+        .css-1jqq78o-placeholder {
+            color: #000000 !important;
+        }
+
+        .rowsSelect {
+
+            .react-select__control {
+                width: 62px !important;
+
+                .css-1xc3v61-indicatorContainer {
+                    padding: 0px 10px 0px 0px !important;
+                }
+
+                .css-15lsz6c-indicatorContainer {
+                    padding: 0px 10px 0px 0px !important;
+                }
+            }
+        }
+    }
+
+}

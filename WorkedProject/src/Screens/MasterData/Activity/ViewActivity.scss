@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: gray;
+
+.ViewActivity {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            padding: 18px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                text-align: left;
+                font: normal normal 600 20px/29px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                margin: 0px;
+            }
+
+            .selButton {
+                background: #74613C;
+                border: 1px solid #74613C;
+                border-radius: 8px;
+                margin: 0px 6px;
+                height: 45px;
+                padding: 0px 20px;
+                color: #fff;
+                outline: none;
+
+            }
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+                cursor: default;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #31C52B;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                        opacity: 1;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .react-selectChange {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+                cursor: default;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #f92e05;
+                    background: #fbeeee;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid #AAAAAA;
+            opacity: 1;
+        }
+
+        .card-body {
+            padding: 30px 0px;
+
+            .DecDiv {
+                display: flex;
+
+                .FirstGroup {
+                    min-width: 150px;
+                    color: $color-Light-gray;
+                    text-transform: uppercase !important;
+                }
+
+                .SecondGroup {
+                    .levelText {
+                        text-transform: lowercase;
+                    }
+
+                    .levelText::first-letter {
+                        text-transform: uppercase;
+                        /* change first letter to uppercase */
+                    }
+
+                    .viewLink {
+                        text-align: left;
+                        text-decoration: underline;
+                        letter-spacing: 0px;
+                        color: #74613C;
+                        opacity: 1;
+                        padding-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                .list-group {
+                    border: none;
+
+                    .boldText {
+                        font-weight: 500;
+                        width: 165px;
+                    }
+
+                    .list-group-item {
+                        border: none;
+                    }
+                }
+
+                .LastGroupDiv {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .LastGroup {
+                        display: flex;
+                        flex-direction: row;
+
+                        .mainIcon {
+                            width: 150px;
+                            height: 150px;
+                            background: transparent;
+                            border-radius: 8px;
+                            opacity: 1;
+                            border: none;
+                        }
+
+                        .videoPlayIcon {
+                            left: 30%;
+                            position: absolute;
+                            top: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.POPUPS {
+    .modal-dialog {
+        position: fixed !important;
+        margin: auto !important;
+        height: 103% !important;
+        width: 552px !important;
+        right: 0px !important;
+        top: 90px !important;
+        transform: translateY(-50%) !important;
+        -webkit-transform: translate3d(0%, 0, 0) !important;
+        -ms-transform: translate3d(0%, 0, 0) !important;
+        -o-transform: translate3d(0%, 0, 0) !important;
+        transform: translate3d(0%, 0, 0) !important;
+
+        .modal-content {
+            height: calc(100% - 90px) !important;
+            overflow-y: auto !important;
+            padding: 20px 20px !important;
+            background: #FFFFFF 0% 0% no-repeat padding-box !important;
+            box-shadow: 0px 1px 6px #0000001A !important;
+            border-radius: 8px 0px 0px 8px !important;
+            opacity: 1 !important;
+        }
+
+        .modal-header {
+            display: flex;
+            height: 61px;
+            align-items: center;
+            padding: 0rem 0rem 1rem 0rem;
+            border-bottom: 1px solid #AAAAAA;
+
+            .modal-title {
+                text-align: left;
+                font: normal normal 500 20px/29px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+            }
+
+            .btnsDiv {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .redButton {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    color: #FF3333;
+                    background: #FCE7E7 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 1px 3px #CCCCCCB3;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 44px;
+                    font-size: 14px;
+                }
+
+                .greenButton {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    color: #31C52B;
+                    background: #E7F6E6 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 1px 3px #CCCCCCB3;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 44px;
+                    font-size: 14px;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+
+
+        .proTitleDiv {
+
+            align-items: center;
+            padding: 8px 0px;
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                width: 360px;
+
+                .react-select__control {
+                    border-radius: 8px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 360px;
+                    height: 48px;
+                    border: 1px solid #DDDDDD;
+                    opacity: 1;
+                    font-weight: 500;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .Label {
+                text-align: left;
+                font: normal normal medium 16px/22px Gotham-Book;
+                letter-spacing: 0px;
+                font-weight: 500;
+                color: #74613C;
+                opacity: 1;
+            }
+
+            .LastGroup {
+                display: flex;
+                flex-direction: row;
+
+                .list-group-item {
+                    border: none;
+                    padding: 8px 0px;
+
+                    justify-content: flex-start;
+                }
+
+                .mainIcon {
+                    width: 120px;
+                    height: 120px;
+                    background: transparent;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                }
+
+                .videoPlayIcon {
+                    left: 20%;
+                    top: 20%;
+
+                    position: absolute;
+                }
+
+                .RemoveDiv {
+                    cursor: pointer;
+
+                    .Remove {
+                        color: #FF1A1A;
+                    }
+                }
+            }
+
+            .form-control {
+                width: 360px !important;
+                height: 48px !important;
+                background: #F5F5F5 0% 0% no-repeat padding-box !important;
+                border-radius: 8px !important;
+                font-weight: 500;
+            }
+
+            .textArea {
+                background: #F5F5F5 0% 0% no-repeat padding-box;
+                border: 1px solid #DDDDDD;
+                border-radius: 8px;
+                padding: 10px;
+                opacity: 1;
+                width: 440px;
+                height: 220px;
+                font-weight: 500;
+            }
+
+            .form-control:focus,
+            .textArea:focus {
+                outline: none;
+                border-color: #74613C;
+                box-shadow: none;
+            }
+
+            .RemoveDiv {
+                cursor: pointer;
+
+                .Remove {
+                    color: #FF1A1A;
+                }
+            }
+
+            .sectionTitle {
+                text-align: center;
+
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                font-weight: 600;
+                margin-bottom: 0px !important;
+            }
+        }
+
+        hr {
+
+            margin: 0rem 0rem 0.4rem 0.4rem;
+        }
+    }
+}

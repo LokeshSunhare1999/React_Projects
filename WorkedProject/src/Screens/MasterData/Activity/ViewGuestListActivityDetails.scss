@@ -1,0 +1,107 @@
+.mainActivityContainerGuestList {
+
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    background: #ffffff;
+    z-index: -1;
+
+    .headerBox {
+        padding: 15px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pageTitleText {
+            text-align: left;
+            letter-spacing: 0px;
+            color: #74613C;
+            opacity: 1;
+            font: normal normal 600 20px/29px Noto-Serif-JP;
+            margin: 0px;
+        }
+
+        .LevelContainer {
+            text-align: right;
+            display: flex;
+            justify-content: end;
+            padding-right: 10px;
+        }
+    }
+
+    .separatorLine {
+        border: 0.5px solid #AAAAAA;
+        opacity: 1;
+        margin: 0px 20px;
+    }
+
+    .guestListCards {
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+
+        .guestListContainerDiv {
+            display: flex;
+            width: 265px;
+            height: 80px;
+            background: #F5F3EE 0% 0% no-repeat padding-box;
+            border: 0.5px solid #DDDDDD;
+            border-radius: 10px;
+            opacity: 1;
+            margin: 10px;
+            padding: 10px;
+            align-items: center;
+            justify-content: flex-start;
+
+            .mainIcon {
+                border-radius: 8px;
+            }
+
+            .guestData {
+                padding-left: 10px;
+
+                .guestName {
+                    display: flex;
+
+                    .nameText {
+                        text-align: left;
+                        font: normal normal bold 16px/23px Noto Serif JP;
+                        letter-spacing: 0px;
+                        color: #74613C;
+                        opacity: 1;
+                        margin-bottom: 0px;
+                    }
+
+
+
+                    .lastNameText {
+                        padding-left: 6px;
+                        text-align: left;
+                        font: normal normal bold 16px/23px Noto Serif JP;
+                        letter-spacing: 0px;
+                        color: #74613C;
+                        opacity: 1;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .phoneNoDiv {
+                    display: flex;
+
+                    .phoneNoText {
+                        text-align: left;
+                        font: normal normal normal 14px/20px Gotham;
+                        letter-spacing: 0px;
+                        color: #222222;
+                        text-transform: capitalize;
+                        opacity: 1;
+                        margin-bottom: 0px;
+
+                    }
+                }
+            }
+        }
+    }
+}

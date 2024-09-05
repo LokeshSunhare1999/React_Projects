@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: gray;
+
+.AddRecipe {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            height: 80px;
+            padding: 20px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .recipeTitle {
+                color: #74613C;
+                text-align: left;
+                font: normal normal 600 20px/29px Noto-Serif-JP;
+            }
+
+            .recipeDecs {
+                text-transform: capitalize;
+            }
+
+            h4 {
+                text-align: left;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+            }
+
+            .redButton {
+                width: 117px;
+                border: none;
+                color: #FF3333;
+                background: #FCE7E7 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                height: 44px;
+                font-weight: 500;
+            }
+
+            .greenButton {
+                width: 117px;
+                border: none;
+                color: #31C52B;
+                background: #E7F6E6 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                height: 44px;
+                font-weight: 500;
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid gray;
+            margin: 0px 15px;
+        }
+
+        .card-body {
+            .cardDiv {
+                .react-select {
+                    outline: initial;
+                    box-shadow: none;
+                    width: 360px;
+
+                    .react-select__control {
+                        border-radius: 8px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        outline: initial;
+                        box-shadow: none;
+                        width: 360px;
+                        height: 48px;
+                        border: 1px solid #DDDDDD;
+                        opacity: 1;
+                    }
+
+                    .react-select__indicator-separator {
+                        display: none;
+                    }
+
+                    .react-select__dropdown-indicator {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            fill: black;
+                        }
+                    }
+
+                    .react-select__control--is-focused.react-select__control--menu-is-open {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .react-select-total-min {
+                    outline: initial;
+                    box-shadow: none;
+                    width: 160px;
+
+                    .react-select__control {
+                        border-radius: 8px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        outline: initial;
+                        box-shadow: none;
+                        width: 160px;
+                        height: 48px;
+                        border: 1px solid #DDDDDD;
+                        opacity: 1;
+                    }
+
+                    .react-select__indicator-separator {
+                        display: none;
+                    }
+
+                    .react-select__dropdown-indicator {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            fill: black;
+                        }
+                    }
+
+                    .react-select__control--is-focused.react-select__control--menu-is-open {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .Label {
+                    text-align: left;
+                    font: normal normal medium 16px/22px Gotham-Book !important;
+                    letter-spacing: 0px;
+                    font-weight: 500 !important;
+                    color: #74613C;
+                    opacity: 1;
+                }
+                .RemoveDiv .Remove {
+                    color: #FF1A1A;
+                }
+
+                .btn-add-media {
+                    width: 120px;
+                    height: 42px;
+                    color: #fff;
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 2px 4px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    cursor: pointer;
+                    text-transform: capitalize !important;
+                    text-align: left;
+                    font-size: 16px;
+                    font-family: normal normal 16px/22px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 1;
+                }
+
+                .btn-add-media input[type=file] {
+                    opacity: 0;
+                    position: absolute;
+                    height: 42px;
+                    cursor: pointer !important;
+
+                }
+
+                .mainIcon {
+                    border-radius: 8px;
+                }
+
+                .rationalSubTitle {
+                    margin-left: 170px;
+                    text-align: left;
+                    font: normal normal medium 16px/22px Gotham-Book !important;
+                    letter-spacing: 0px;
+                    font-weight: 500 !important;
+                    color: #74613C;
+                    opacity: 1;
+                    margin-top: -10px;
+
+                    .preparationBtn {
+                        font-size: " 24px";
+                        margin-top: "-4px";
+                        margin-right: "5px";
+                    }
+                }
+
+                .rationalSubTitle {
+                    cursor: pointer;
+                    text-align: left;
+                    font: normal normal medium 14px/22px Gotham-Book !important;
+                    letter-spacing: 0px;
+                    font-size: 15px;
+                    font-weight: 500 !important;
+                    color: #74613C;
+                    opacity: 1;
+                    margin-top: -10px;
+
+                    .preparationBtn {
+                        font-size: " 24px";
+                        margin-top: "-4px";
+                        margin-right: "5px";
+                    }
+                }
+
+                .rationalItembtn {
+                    cursor: pointer;
+                    text-align: left;
+                    font: normal normal medium 14px/22px Gotham-Book !important;
+                    letter-spacing: 0px;
+                    font-size: 15px;
+                    font-weight: 500 !important;
+                    color: #74613C;
+                    opacity: 1;
+                    margin-top: -10px;
+
+                    .plusIcon {
+                        font-size: 24px;
+                    }
+                }
+
+                .Title {
+                    width: 360px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+                    font-weight: 500;
+                }
+
+                .caloriesLabel {
+                    text-align: left;
+                    font: normal normal medium 16px/22px Gotham-Book !important;
+                    letter-spacing: 0px;
+                    font-weight: 500 !important;
+                    color: #74613C;
+                    opacity: 1;
+                    margin-left: 40px;
+                }
+
+                .brownButton {
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 2px 4px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                    width: 120px;
+                    height: 42px;
+                    font: normal normal medium 16px/22px Gotham;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 1;
+                }
+
+                .textArea {
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 140px;
+                }
+
+                .ProteinDiv {
+
+                    margin-left: 40px;
+
+                    .TitleForNutrition {
+                        text-align: left;
+                        font: normal normal medium 16px/22px Gotham-Book !important;
+                        letter-spacing: 0px;
+                        font-weight: 500 !important;
+                        color: #222222;
+                        opacity: 1;
+
+                        .nutritionProperty {
+                            text-align: left;
+                            font: normal normal medium 12px/16px Gotham-Book !important;
+                            font-size: 12px;
+                            letter-spacing: 0px;
+                            color: #AAAAAA;
+                        }
+                    }
+                }
+
+
+                .Title {
+                    width: 360px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+                    text-align: left;
+                    font: normal normal medium 14px/20px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                }
+
+                .Calories {
+                    width: 160px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+
+                    text-align: left;
+                    font: normal normal medium 14px/20px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                    margin-left: 40px;
+                }
+
+                .Nutrition {
+                    width: 140px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+                    text-align: left;
+                    font: normal normal medium 14px/20px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                }
+
+                .small {
+                    color: #df4b3b;
+                    text-align: left;
+                }
+
+                .IntgredientsDiv {
+                    width: 360px;
+                }
+
+                .criteriaInputsMainDiv {
+
+                    .rationalInputBox {
+                        width: 100%;
+                        display: flex;
+
+                        .rationalInputTextDiv {
+                            width: 100%;
+                            margin-bottom: 15px;
+                            margin-right: 40px;
+
+                            .mainIcon {
+                                cursor: pointer;
+                            }
+
+                            .rationalInputTexts {
+                                width: 360px;
+                                background: #F5F5F5 0% 0% no-repeat padding-box;
+                                border: 1px solid #DDDDDD;
+                                border-radius: 8px;
+                                opacity: 1;
+                                padding-left: 10px;
+                                height: 48px;
+                                text-align: left;
+                                font: normal normal medium 14px/20px Gotham-Book;
+                                letter-spacing: 0px;
+                                color: #000000;
+                                opacity: 1;
+                            }
+
+                            .ItemQtyTitle {
+                                font-weight: 500;
+
+                                .innerItemQtyDiv {
+                                    margin-right: 164px;
+                                }
+                            }
+
+                            .CombineDiv {
+
+                                .ItemDiv {
+                                    display: grid;
+
+                                    .Label {
+                                        color: #000000;
+                                    }
+
+                                    .ItemTexts {
+                                        width: 160px;
+                                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                                        border: 1px solid #DDDDDD;
+                                        border-radius: 8px;
+                                        opacity: 1;
+                                        padding-left: 10px;
+                                        height: 48px;
+                                        text-align: left;
+                                        font: normal normal medium 14px/20px Gotham-Book;
+                                        letter-spacing: 0px;
+                                        color: #000000;
+                                        opacity: 1;
+                                    }
+                                }
+
+                                .mainIcon {
+                                    cursor: pointer;
+                                }
+
+                                .QtyDiv {
+                                    display: grid;
+                                    margin-left: 40px;
+
+                                    .Label {
+                                        color: #000000;
+                                    }
+
+                                    .QtyTexts {
+                                        width: 160px;
+                                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                                        border: 1px solid #DDDDDD;
+                                        border-radius: 8px;
+                                        opacity: 1;
+                                        padding-left: 10px;
+                                        height: 48px;
+                                        text-align: left;
+                                        font: normal normal medium 14px/20px Gotham-Book;
+                                        letter-spacing: 0px;
+                                        color: #000000;
+                                        opacity: 1;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .criteriaInputsMainsDiv {
+                    width: 360px;
+
+                    .rationalInputsBox {
+                        width: 100%;
+
+                        .rationalInputTextsDiv {
+                            width: 100%;
+
+                            .mainIcon {
+                                cursor: pointer;
+                            }
+
+                            .rationalInputTexts {
+                                width: 360px;
+                                background: #F5F5F5 0% 0% no-repeat padding-box;
+                                border: 1px solid #DDDDDD;
+                                border-radius: 8px;
+                                opacity: 1;
+                                padding-left: 10px;
+                                height: 48px;
+                                text-align: left;
+                                font: normal normal medium 14px/20px Gotham-Book;
+                                letter-spacing: 0px;
+                                color: #000000;
+                                opacity: 1;
+
+                            }
+
+                            .ItemDiv {
+                                display: grid;
+
+                                .Label {
+                                    color: #000000;
+                                }
+
+                                .ItemTexts {
+                                    width: 160px;
+                                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                                    border: 1px solid #DDDDDD;
+                                    border-radius: 8px;
+                                    opacity: 1;
+                                    padding-left: 10px;
+                                    height: 48px;
+                                    text-align: left;
+                                    font: normal normal medium 14px/20px Gotham-Book;
+                                    letter-spacing: 0px;
+                                    color: #000000;
+                                    opacity: 1;
+
+                                }
+                            }
+
+                            .mainIcon {
+                                cursor: pointer;
+                            }
+
+                            .QtyDiv {
+                                display: grid;
+                                margin-left: 40px;
+
+                                .Label {
+                                    color: #000000;
+                                }
+
+                                .QtyTexts {
+                                    width: 160px;
+                                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                                    border: 1px solid #DDDDDD;
+                                    border-radius: 8px;
+                                    opacity: 1;
+                                    padding-left: 10px;
+                                    height: 48px;
+                                    text-align: left;
+                                    font: normal normal medium 14px/20px Gotham-Book;
+                                    letter-spacing: 0px;
+                                    color: #000000;
+                                    opacity: 1;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

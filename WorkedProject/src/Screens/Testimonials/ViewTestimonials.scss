@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../assets/fonts/OpenSans//OpenSans-Regular.ttf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: #AAAAAA;
+
+.ViewTestimonials {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            padding: 18px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                text-align: left;
+                font: normal normal 600 20px/29px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                margin: 0px;
+            }
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #31C52B;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .react-selectChange {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #f92e05;
+                    background: #fbeeee;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid #AAAAAA;
+            opacity: 1;
+        }
+
+        .card-body {
+            padding: 30px 0px;
+
+            .DecDiv {
+                display: flex;
+
+                .FirstGroup {
+                    height: 100%;
+                    text-align: left;
+                    font: normal normal 16px/22px Gotham-Book !important;
+                    letter-spacing: 0px;
+                    color: #AAAAAA;
+                    text-transform: uppercase;
+                    opacity: 1;
+                    font-weight: 500 !important;
+                }
+
+                .SecGroup {
+                    text-align: left;
+                    font: normal normal normal 16px/26px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    text-transform: capitalize;
+                    opacity: 1;
+                    font-weight: 500;
+
+                    .emailLabel {
+                        padding-top: 2px;
+                    }
+
+                    .submittedLabel {
+                        padding-top: 4px;
+                    }
+
+                    .programLabel {
+                        padding-top: 4px;
+                    }
+
+                    .programCheckIn {
+                        padding-top: 4px;
+                    }
+                }
+
+                .list-group {
+                    border: none;
+
+                    .list-group-item {
+                        border: none;
+                    }
+                }
+
+                .LastGroup {
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    text-align: left;
+                    font: normal normal normal 18px/26px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    text-transform: capitalize;
+                    opacity: 1;
+                    font-weight: 500;
+
+                    .mainIcon {}
+
+                    .redButton {
+                        width: 117px;
+                        border: none;
+                        color: #FF3333;
+                        background: #FCE7E7 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 1px 3px #CCCCCCB3;
+                        border-radius: 8px;
+                        opacity: 1;
+                        height: 44px;
+                        font-weight: 500;
+                        text-align: left;
+                        font: normal normal 600 14px/19px OpenSans;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        opacity: 1;
+                        padding: 12px 12px 12px 12px;
+
+                        .mainIcon {
+                            margin-bottom: 2px;
+                        }
+                    }
+
+                    .greenButton {
+                        width: 117px;
+                        border: none;
+                        color: #31C52B;
+                        background: #E7F6E6 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 1px 3px #CCCCCCB3;
+                        border-radius: 8px;
+                        opacity: 1;
+                        height: 44px;
+                        font-weight: 500;
+                        text-align: left;
+                        font: normal normal 600 14px/19px OpenSans;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        opacity: 1;
+                        padding: 12px 12px 12px 12px;
+
+                        .mainIcon {
+                            margin-bottom: 4px;
+                        }
+                    }
+
+                    .StatusSpan {
+                        color: #AAAAAA;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+.ForgotPage {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+
+    .ImageMainDiv {
+        width: 50%;
+        height: 100%;
+
+        background-image: url('../../../assets//images/loginModule/mainImage.png');
+        background-repeat: no-repeat;
+        background-size: 102%;
+        .MainImage {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
+    .ForgotMainDiv {
+        background: transparent linear-gradient(180deg, #fbf0dc 0%, #ffffff 100%) 0% 0% no-repeat padding-box;
+        .ForgotDiv {
+            height: 100%;
+
+            .logoImageDiv {
+                padding-bottom: 90px;
+
+                .logoImage {
+                    rotate: -0.5deg;
+                    width: 380px;
+                    height: 90px;
+                }
+            }
+
+            .CardDiv {
+                width: 440px;
+                height: 370px;
+                text-align: center;
+                box-shadow: 0px 1px 6px #00000029;
+                border-radius: 20px;
+                opacity: 1;
+
+                .CardBodyDiv {
+                    padding: 40px;
+
+                    .Heading {
+                        margin-bottom: 15px;
+                        text-align: left;
+                        color: #74613C;
+                        font: normal normal bold 24px/35px Noto-Serif-JP;
+                        letter-spacing: 0px;
+                        opacity: 1;
+                    }
+
+                    .Desc {
+                        margin-bottom: 22px;
+                        text-align: left;
+                        font: normal normal normal 14px/20px Gotham-Book;
+                        letter-spacing: 0px;
+                        color: #AAAAAA;
+                        opacity: 1;
+                    }
+
+                    .small {
+                        color: #df4b3b;
+                        text-align: left;
+                    }
+
+                    .BackToLogin {
+                        a {
+                            text-align: center;
+                            font: normal normal medium 14px/20px;
+                            letter-spacing: 0px;
+                            color: #386CB5;
+                            opacity: 1;
+                            text-decoration: none;
+                            font-weight: 500;
+                            display: inline-flex;
+                            align-items: center;
+                        }
+
+                        .leftArrow {
+                            color: #386CB5;
+                            position: absolute;
+                            text-align: left;
+                            margin-left: -30px;
+                        }
+                    }
+
+                    .InputSpace,
+                    .form-floating {
+                        padding-bottom: 21px;
+
+                        .form-control {
+                            height: 48px;
+                            background: #F5F5F5 0% 0% no-repeat padding-box;
+                            border: 1px solid #DDDDDD;
+                            border-radius: 8px;
+                            opacity: 1;
+                            padding: 0px 0px;
+                            text-align: left;
+                            font: normal normal normal 14px/20px;
+                            letter-spacing: 0px;
+                            color: #000000;
+                            border: none;
+                        }
+                        .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+                            padding: 12px 12px 13px 12px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

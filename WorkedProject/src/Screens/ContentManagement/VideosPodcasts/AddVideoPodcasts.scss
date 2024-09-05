@@ -1,0 +1,277 @@
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: gray;
+
+.AddVideoPodcasts {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px !important;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            padding: 20px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+
+            h4 {
+                text-align: left;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+            }
+
+            .redButton {
+                border: none;
+                color: #FF3333;
+                background: #FCE7E7 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .greenButton {
+                border: none;
+                color: #31C52B;
+                background: #E7F6E6 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                height: 44px;
+                display: flex;
+                align-items: center;
+            }
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid greenyellow;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: black;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid gray;
+            margin: 0px 15px;
+        }
+
+        .card-body {
+            .cardDiv {
+                .dropDownsDiv {
+                    display: flex;
+                }
+
+                .react-select {
+                    outline: initial;
+                    box-shadow: none;
+                    width: 360px;
+
+                    .react-select__control {
+                        border-radius: 8px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        outline: initial;
+                        box-shadow: none;
+                        width: 360px;
+                        height: 48px;
+                        border: 1px solid #DDDDDD;
+                        opacity: 1;
+                        text-transform: capitalize;
+                    }
+
+                    .react-select__indicator-separator {
+                        display: none;
+                    }
+
+                    .react-select__dropdown-indicator {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            fill: black;
+                        }
+                    }
+
+                    .react-select__control--is-focused.react-select__control--menu-is-open {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .Title {
+                    width: 360px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+                }
+
+                .Amount {
+                    width: 180px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+                }
+
+                .imgPreview {
+
+                    background: transparent;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                }
+
+                .mainIcon {
+
+                    background: transparent;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .Label {
+                    text-align: left;
+                    font: normal normal medium 16px/22px Gotham-Book;
+                    letter-spacing: 0px;
+                    font-weight: 500;
+                    color: #74613C;
+                    opacity: 1;
+                }
+
+                .btn-add-media {
+                    width: 120px;
+                    height: 42px;
+                    color: #fff;
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 2px 4px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    cursor: pointer;
+                    text-transform: capitalize !important;
+                    text-align: left;
+                    font: normal normal 16px/22px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .btn-add-media-disabled {
+                    width: 120px;
+                    height: 42px;
+                    color: #fff;
+                    background: #B1A895 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 2px 4px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    cursor: pointer;
+                    pointer-events: none;
+                    text-transform: capitalize !important;
+                    text-align: left;
+                    font: normal normal 16px/22px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .btn-add-media input[type=file] {
+                    opacity: 0;
+                    position: absolute;
+                    height: 42px;
+                    cursor: pointer !important;
+                }
+
+                .btn-add-media-disabled input[type=file] {
+                    opacity: 0;
+                    position: absolute;
+                    height: 42px;
+                    cursor: pointer !important;
+                }
+
+                .textArea {
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    width: 756px;
+                    height: 160px;
+                }
+
+                .brownButton {
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 2px 4px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                    width: 120px;
+                    height: 42px;
+                    font: normal normal medium 16px/22px Gotham;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 1;
+                }
+
+                .videoDur {
+                    text-align: left;
+                    font: normal normal normal 18px/26px Gotham-Book;
+                    letter-spacing: 0px;
+                    color: #000000;
+                    opacity: 1;
+                }
+
+                .RemoveDiv {
+                    cursor: pointer;
+
+                    .Remove {
+
+                        color: #FF1A1A;
+                    }
+                }
+            }
+        }
+    }
+}

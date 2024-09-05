@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: gray;
+
+.ViewTeamMember {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 500px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            padding: 18px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ButtonsDiv {
+                display: flex;
+
+                .editButtonGuest {
+                    color: white;
+                    width: 120px;
+                    height: 45px;
+                    /* UI Properties */
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 2px 4px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            h4 {
+                text-align: left;
+                font: normal normal 600 20px/29px Noto-Serif-JP;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                margin: 0px;
+            }
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #31C52B;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .react-selectChange {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .ActiveClass {
+                    color: #31C52B;
+                }
+
+                .InactiveClass {
+                    color: #FF2F2F;
+                }
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid #f92e05;
+                    background: #fbeeee;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #74613C;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid #AAAAAA;
+            opacity: 1;
+            margin: 0px 15px;
+        }
+
+        .card-body .detailsDataPro {}
+
+        .card-body {
+            padding: 30px 0px;
+            display: flex !important;
+
+            .DecDiv {
+                display: flex;
+
+                .FirstGroup {
+                    text-transform: uppercase !important;
+                    font: normal normal medium 16px/22px Gotham;
+                    letter-spacing: 0px;
+                    color: #74613C;
+                    text-transform: uppercase;
+                    opacity: 1;
+                }
+
+                .SecondGroup {
+                    .levelText {
+                        text-transform: lowercase;
+                    }
+
+                    .levelText::first-letter {
+                        text-transform: uppercase;
+                        /* change first letter to uppercase */
+                    }
+
+                    .viewLink {
+                        text-align: left;
+                        text-decoration: underline;
+                        letter-spacing: 0px;
+                        color: #74613C;
+                        opacity: 1;
+                        padding-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                .list-group {
+                    border: none;
+
+                    .list-group-item {
+                        border: none;
+                        display: flex;
+
+                        .ageText {
+                            color: #AAAAAA;
+                            padding-left: 10px;
+                            margin: 0px;
+                        }
+                    }
+
+                    .imgDivText {
+                        padding-left: 110px;
+
+                        .titleText {
+                            text-align: left;
+                            font: normal normal medium 16px/22px Gotham;
+                            letter-spacing: 0px;
+                            color: #74613C;
+                            text-transform: uppercase;
+                            opacity: 1;
+                            padding-left: 20px;
+                            margin-bottom: 0px;
+                        }
+
+                        .mainImgPro {
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+
+                .LastGroup {
+                    display: flex;
+                    flex-direction: row;
+
+                    .mainIcon {
+                        width: 150px;
+                        height: 150px;
+                        background: transparent;
+                        border-radius: 8px;
+                        opacity: 1;
+                        border: none;
+                    }
+
+                    .videoPlayIcon {
+                        left: 109px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}

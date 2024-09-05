@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: gray;
+
+.edit-activity {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            padding: 20px 20px;
+            height: 80px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                text-align: left;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                font: normal normal 600 20px/29px Noto-Serif-JP;
+            }
+
+            .redButton {
+                border: none;
+                color: #FF3333;
+                background: #FCE7E7 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                width: 118px;
+                height: 44px;
+
+                .mainIcon {
+                    margin-bottom: 2px;
+                }
+            }
+
+            .greenButton {
+                border: none;
+                color: #31C52B;
+                background: #E7F6E6 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                width: 118px;
+                height: 44px;
+
+                .mainIcon {
+                    margin-bottom: 4px;
+                }
+            }
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid greenyellow;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+
+
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: black;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border: 0.5px solid #AAAAAA;
+            opacity: 1;
+            margin: 0px 20px;
+        }
+
+
+        .card-body {
+            padding: 30px 35px;
+
+            .SecondSeparator {
+                border: 1px solid #CCCCCC;
+                opacity: 1;
+            }
+
+            .CardHeaderSec {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-left: -15px;
+                background-color: transparent;
+                border: none;
+                display: flex;
+                justify-content: space-between;
+
+                h4 {
+                    text-align: left;
+                    letter-spacing: 0px;
+                    color: #74613C;
+                    opacity: 1;
+                    font: normal normal 600 20px/29px Noto-Serif-JP;
+                }
+            }
+
+            .cardDiv {
+                .Label {
+                    text-align: left;
+                    font: normal normal medium 16px/22px Gotham-Book;
+                    letter-spacing: 0px;
+                    font-weight: 500;
+                    color: #74613C;
+                    opacity: 1;
+                }
+
+                .react-select {
+                    outline: initial;
+                    box-shadow: none;
+                    width: 360px;
+
+                    .react-select__control {
+                        border-radius: 8px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        outline: initial;
+                        box-shadow: none;
+                        width: 360px;
+                        height: 48px;
+                        border: 1px solid #DDDDDD;
+                        opacity: 1;
+                        font-weight: 600;
+                    }
+
+                    .react-select__indicator-separator {
+                        display: none;
+                    }
+
+                    .react-select__dropdown-indicator {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            fill: black;
+                        }
+                    }
+
+                    .react-select__control--is-focused.react-select__control--menu-is-open {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .textArea {
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    width: 744px;
+                    height: 160px;
+                    max-height: 250px;
+                }
+
+                .activity-date-div{
+                    width: 360px;
+                    
+                    .dateBlock {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 180px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        border: 1px solid #DDDDDD;
+                        border-radius: 8px;
+                        opacity: 1;
+                        height: 48px;
+                        padding: 0 10px;
+    
+    
+                        .dayDateTextDiv {
+                            display: flex;
+                            align-items: center;
+                            flex: 0.9;
+    
+                            .dayDateTextPlaceholder {
+                                color: #495057;
+                                opacity: 0.9;
+                                margin: 0px;
+                                font-weight: 400;
+                            }
+    
+                            .dayDateText {
+                                margin: 0px;
+                            }
+    
+                            .dayDateTextPlaceholder {
+                                color: #495057;
+                                opacity: 0.9;
+                                margin: 0px;
+                                margin-bottom: 0px;
+                            }
+    
+                            .dayDateTextPlaceHolder {
+                                color: #495057;
+                                opacity: 1;
+                                margin: 0px;
+                            }
+                        }
+    
+                        .datePickerDiv {
+                            flex: 0.1;
+    
+                            .calIcon {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+                
+                .weekly-frequency{
+                    .check-box-input{
+                        font-size: 13px;
+                        .check-box{
+                            position: relative;
+                            margin-right:  10px;
+                            label{
+                                padding: 5px 10px;
+                                border-radius: 20px;
+                                text-align: center;
+                                border: 1px solid #74613C;
+                                font-weight: 500;
+                                color: #74613C;
+                            }
+                            input{
+                                cursor: pointer !important;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+        
+                                +label{
+                                    background-color: #F1F1F1;
+                                    -webkit-user-select:none;
+                                    -khtml-user-select:none;
+                                    -moz-user-select:none;
+                                    -o-user-select:none;
+                                    user-select:none;
+                                }
+                            }
+        
+                            input:checked+label{
+                                background-color: #74613C;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+
+                .Title {
+                    width: 360px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+                }
+
+                .phoneNoInput {
+
+
+                    .dateSubBlock {
+                        justify-content: space-between;
+                        padding: 12px 12px 12px 10px;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 8px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        outline: initial;
+                        box-shadow: none;
+                        width: 360px;
+                        height: 48px;
+                        border: 1px solid #DDDDDD;
+                        opacity: 1;
+
+                        .react-datepicker-wrapper {
+                            cursor: pointer;
+                            margin-bottom: 5px;
+                        }
+
+                        .dayDateTextDiv {
+                            width: 4234px;
+
+                            .dayDateTextPlaceholder {
+                                color: #495057;
+                                opacity: 0.9;
+                                margin: 0px;
+                                font-weight: 400;
+                                margin-bottom: 0px;
+                            }
+
+                            .dayDateText {
+                                text-align: left;
+                                margin-bottom: 0px !important;
+                                font-family: inherit;
+                                font-size: 16px;
+                                letter-spacing: 0px;
+                                opacity: 1;
+                            }
+                        }
+
+                        .calMargin {
+                            margin: 4px 0px 4px 0px;
+                        }
+                    }
+
+                    .css-11prs2m-MuiInputBase-root-MuiOutlinedInput-root {
+                        border-radius: 8px;
+                        border: none;
+                    }
+
+                    .timePicker {
+                        border-radius: 8px;
+                        padding: 0px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        outline: initial;
+                        box-shadow: none;
+                        width: 360px;
+                        border: none;
+                        opacity: 1;
+                        font-weight: 600;
+                    }
+
+                    .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+                        height: 48px;
+                        border-radius: 8px;
+                        padding: 0px 0px 0px 8px;
+                        border: none;
+                        font-size: 15px !important;
+                    }
+
+                    .css-1xhypcz-MuiStack-root {
+                        padding-top: 0px;
+                        border-radius: 8px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

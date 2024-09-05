@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: gray;
+
+.AddRecipeCollection {
+    .card {
+        background-color: #fff;
+        width: 100%;
+        min-height: 790px;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+
+        .card-header {
+            height: 80px;
+            padding: 20px 15px;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                text-align: left;
+                letter-spacing: 0px;
+                color: #74613C;
+                opacity: 1;
+                text-align: left;
+                font: normal normal 600 20px/29px Noto-Serif-JP;
+            }
+
+            .redButton {
+                border: none;
+                color: #FF3333;
+                background: #FCE7E7 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                height: 44px;
+                width: 117px;
+                font-weight: 500;
+            }
+
+            .greenButton {
+                border: none;
+                color: #31C52B;
+                background: #E7F6E6 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 3px #CCCCCCB3;
+                border-radius: 8px;
+                opacity: 1;
+                height: 44px;
+                width: 117px;
+                font-weight: 500;
+            }
+
+            .react-select {
+                outline: initial;
+                box-shadow: none;
+                margin-left: 10px;
+
+                .react-select__control {
+                    border-radius: 8px;
+                    border: 1px solid greenyellow;
+                    background: #EFFBEE;
+                    outline: initial;
+                    box-shadow: none;
+                    width: 120px;
+                    height: 45px;
+                }
+
+                .react-select__indicator-separator {
+                    display: none;
+                }
+
+                .react-select__dropdown-indicator {
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: black;
+                    }
+                }
+
+                .react-select__control--is-focused.react-select__control--menu-is-open {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid gray;
+            margin: 0px 15px;
+        }
+
+        .card-body {
+            .cardDiv {
+                .react-select {
+                    outline: initial;
+                    box-shadow: none;
+                    width: 360px;
+
+                    .react-select__control {
+                        border-radius: 8px;
+                        background: #F5F5F5 0% 0% no-repeat padding-box;
+                        outline: initial;
+                        box-shadow: none;
+                        width: 360px;
+                        height: 48px;
+                        border: 1px solid #DDDDDD;
+                        opacity: 1;
+                    }
+
+                    .react-select__indicator-separator {
+                        display: none;
+                    }
+
+                    .react-select__dropdown-indicator {
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            fill: black;
+                        }
+                    }
+
+                    .react-select__control--is-focused.react-select__control--menu-is-open {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .Title {
+                    width: 360px;
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    height: 48px;
+                    font-weight: 500;
+                }
+
+                .TitleDiv {
+                    height: 101px;
+
+                    .Label {
+                        text-align: left;
+                        font: normal normal medium 16px/22px Gotham;
+                        letter-spacing: 0px;
+                        font-weight: 500;
+                        color: #74613C;
+                        opacity: 1;
+                    }
+
+                    .small {
+                        color: #df4b3b;
+                        text-align: left;
+                    }
+                }
+
+                .DescDiv {
+                    height: 210px;
+
+                    .Label {
+                        text-align: left;
+                        font: normal normal medium 16px/22px Gotham;
+                        letter-spacing: 0px;
+                        font-weight: 500;
+                        color: #74613C;
+                        opacity: 1;
+                    }
+
+                    .small {
+                        color: #df4b3b;
+                        text-align: left;
+                    }
+                }
+
+                .Label {
+                    text-align: left;
+                    font: normal normal medium 16px/22px Gotham;
+                    letter-spacing: 0px;
+                    font-weight: 500;
+                    color: #74613C;
+                    opacity: 1;
+                }
+
+                .textArea {
+                    background: #F5F5F5 0% 0% no-repeat padding-box;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 8px;
+                    opacity: 1;
+                    width: 756px;
+                    height: 160px;
+                    font-weight: 500;
+                }
+
+                .brownButton {
+                    background: #74613C 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 2px 4px #00000026;
+                    border-radius: 8px;
+                    opacity: 1;
+                    border: none;
+                    width: 120px;
+                    height: 42px;
+                    font: normal normal medium 16px/22px Gotham;
+                    letter-spacing: 0px;
+                    color: #FFFFFF;
+                    opacity: 1;
+                }
+
+                .RemoveDiv {
+                    .Remove {
+                        color: #FF1A1A;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.AddRecipe-modal-warning .modal-content {
+    max-width: 640px !important;
+    min-width: 640px !important;
+    width: 640px !important;
+    min-height: 800px;
+    margin: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #0000001A;
+    border-radius: 8px;
+    opacity: 1;
+
+    .modal-header {
+        border-bottom: 1px solid #AAAAAA;
+        padding: 26px 0px 0px 0px;
+        margin: 0px 20px;
+
+        .modalText {
+            text-align: left;
+            font: normal normal 600 20px/29px Noto-Serif-JP;
+            letter-spacing: 0px;
+
+            opacity: 1;
+
+            .recipeTitle {
+                color: #74613C;
+            }
+
+            .recipeDecs {
+                color: #AAAAAA;
+            }
+        }
+    }
+
+    .modal-body {
+        display: flex;
+
+        padding: 20px 20px 0px 20px;
+
+        flex: 0;
+
+        .form-control:focus {
+            color: #212529;
+            border-color: #74613C;
+            box-shadow: none;
+        }
+
+        .Label {
+            text-align: left;
+            font: normal normal medium 16px/22px Gotham-Book !important;
+            letter-spacing: 0px;
+            font-weight: 500 !important;
+            color: #74613C;
+            opacity: 1;
+        }
+
+        .caloriesLabel {
+            text-align: left;
+            font: normal normal medium 16px/22px Gotham-Book !important;
+            letter-spacing: 0px;
+            font-weight: 500 !important;
+            color: #74613C;
+            opacity: 1;
+            margin-left: 20px;
+        }
+
+        .brownButton {
+            background: #74613C 0% 0% no-repeat padding-box;
+            box-shadow: 0px 2px 4px #00000026;
+            border-radius: 8px;
+            opacity: 1;
+            border: none;
+            width: 120px;
+            height: 42px;
+            font: normal normal medium 16px/22px Gotham;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+
+        .textArea {
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            opacity: 1;
+            height: 140px;
+        }
+
+        .TitleForNutrition {
+            text-align: left;
+            font: normal normal medium 16px/22px Gotham-Book !important;
+            letter-spacing: 0px;
+            font-weight: 500 !important;
+            color: #222222;
+            opacity: 1;
+
+            .nutritionProperty {
+                text-align: left;
+                font: normal normal medium 12px/16px Gotham-Book !important;
+                font-size: 12px;
+                letter-spacing: 0px;
+                color: #AAAAAA;
+            }
+        }
+
+        .react-select {
+            outline: initial;
+            box-shadow: none;
+            text-align: left;
+
+            .react-select__control {
+                border-radius: 8px;
+                border: 1px solid #DDDDDD;
+                background: #F5F5F5;
+                outline: initial;
+                box-shadow: none;
+                width: 140px !important;
+                height: 48px;
+                text-align-last: left;
+            }
+
+            .react-select__indicator-separator {
+                display: none;
+            }
+
+            .react-select__dropdown-indicator {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: black;
+                }
+            }
+
+            .react-select__control--is-focused.react-select__control--menu-is-open {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .Title {
+            width: 300px;
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            opacity: 1;
+            height: 48px;
+            text-align: left;
+            font: normal normal medium 14px/20px Gotham-Book;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+
+        .Calories {
+            width: 140px;
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            opacity: 1;
+            height: 48px;
+            text-align: left;
+            font: normal normal medium 14px/20px Gotham-Book;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            margin-left: 20px;
+        }
+
+        .Nutrition {
+            width: 130px;
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 1px solid #DDDDDD;
+            border-radius: 8px;
+            opacity: 1;
+            height: 48px;
+            text-align: left;
+            font: normal normal medium 14px/20px Gotham-Book;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+        }
+
+        .small {
+            color: #df4b3b;
+            text-align: left;
+        }
+    }
+
+    .modal-footer {
+        border: none;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 0px !important;
+
+        .redButton {
+            border: none;
+            color: #FF3333;
+            background: #FCE7E7 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 3px #CCCCCCB3;
+            border-radius: 8px;
+            opacity: 1;
+            height: 44px;
+            width: 118px;
+
+            .mainIcon {
+                margin-bottom: 1px;
+            }
+        }
+
+        .greenButton {
+            border: none;
+            color: #31C52B;
+            background: #E7F6E6 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 3px #CCCCCCB3;
+            border-radius: 8px;
+            opacity: 1;
+            width: 118px;
+            height: 44px;
+        }
+    }
+}

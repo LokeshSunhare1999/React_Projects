@@ -1,0 +1,48 @@
+steps:
+  - id: npm install
+    name: node:14
+    entrypoint: npm
+    args: ['install']
+
+  - id: npm test
+    name: node:14
+    entrypoint: sh
+    args:
+    - '-c'
+    - |
+      if [ -d "test" ]; then
+        if npm test; then
+          echo "Tests passed successfully!"
+          exit 0
+        else
+          echo "Tests failed!"
+          exit 1
+        fi
+      else
+        echo "No tests found. Skipping test execution."
+        exit 0
+      fi 
+    allow_failure: true
+
+  - id: publish to pubsub
+    name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        # Get the Git username
+        git_username=$(git show -s --format='%an' $COMMIT_SHA)
+     
+        #for trimming the tag to obtain branch name
+        branch_name=$(echo "$TAG_NAME" | sed 's/-v.*$//')
+        
+        url=$(gcloud builds describe $BUILD_ID --format='value(logUrl)')
+  
+        message="$BUILD_ID,$PROJECT_ID,$REPO_NAME,$branch_name,$COMMIT_SHA,$_DEPLOYMENT_TRIGGER,$url,$_WEBEX_BOT_TOKEN,$_WEBEX_BOT_ROOM,$git_username"
+        gcloud pubsub topics publish projects/jenkins-ci-cd-193914/topics/webex-notification-topic --message "$message"
+
+
+substitutions:
+  _WEBEX_BOT_TOKEN: NjYyNzZiYTUtYWRhMi00NDE4LTk2MmEtMmYwZjhiZDQ0ZjM4NTc3NGE3ZTItODA3_PF84_c095076e-5f06-467d-a3d8-fb027d14c841
+  _WEBEX_BOT_ROOM: Y2lzY29zcGFyazovL3VzL1JPT00vZGRkZmY4YjAtMjZmNS0xMWVlLWE2NTItMmYwN2Y5MWY0YWIz
+  _DEPLOYMENT_TRIGGER: dev-web-admin

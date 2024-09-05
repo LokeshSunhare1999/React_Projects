@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../../../assets/fonts//Gotham/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Noto-Serif-JP";
+    src: url("../../../assets/fonts/NotoSerifJP/NotoSerifJP-Bold.otf") format("truetype");
+}
+
+$theme-color-primary: #74613C;
+$theme-color-secondary: #F5F3EE;
+$theme-color-white: #fff;
+$color-Light-gray: #F5F5F5;
+
+
+.LevelDiv {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+    .FormGroup {
+        position: relative;
+        display: -webkit-inline-box;
+        align-self: center;
+        margin: 0px !important;
+
+
+
+        .form-label {
+            cursor: text;
+            padding: 0px !important;
+            color: #171725;
+            font-size: 16px;
+            font-weight: bold;
+            text-align-last: center;
+            position: relative;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .react-select {
+            outline: initial;
+            box-shadow: none;
+            margin-left: 10px;
+
+            .react-select__control {
+                border-radius: 8px;
+                border: 1px solid #d7d7d7;
+                background: $color-Light-gray;
+                outline: initial;
+                box-shadow: none;
+                width: 160px;
+                height: 45px;
+                text-align-last: left;
+            }
+
+            .react-select__indicator-separator {
+                display: none;
+            }
+
+            .react-select__dropdown-indicator {
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #74613C;
+                }
+            }
+
+            .react-select__control--is-focused.react-select__control--menu-is-open {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+
+    .DurationDiv {
+        margin-left: 20px;
+
+        .min {
+            width: 55px;
+            border-radius: 8px;
+            height: 45px;
+            border: 1px solid #d7d7d7;
+            padding: 0px 10px;
+            background: #F5F5F5 0% 0% no-repeat padding-box;
+            border: 1px solid #DDDDDD;
+            opacity: 1;
+        }
+
+        .form-control:focus {
+            border: 1px solid #d7d7d7 !important;
+            border-color: #74613C;
+            box-shadow: none;
+        }
+
+        .Dash {
+            font-weight: 600;
+            margin: 0px 8px;
+        }
+
+        .form-label {
+            cursor: text;
+            padding: 0px !important;
+            color: #171725;
+            font-size: 16px;
+            font-weight: bold;
+            text-align-last: center;
+            position: relative;
+            margin-top: 6px;
+            margin-right: 10px;
+        }
+    }
+
+    .separator {
+        border-right: 1px solid #AAAAAA;
+        opacity: 1;
+    }
+
+
+
+
+
+
+}
+
+.ProgramBox {
+    border-radius: 8px;
+    opacity: 1;
+    position: relative;
+
+    .css-1bkf9mw-MuiPaper-root {
+        .css-wn7kgi-MuiToolbar-root {
+            background-color: white;
+            border-radius: 8px;
+        }
+    }
+
+    .MuiTableCell-head {
+
+        span {
+            text-align: left;
+            letter-spacing: 0px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #AAAAAA !important;
+            opacity: 1;
+        }
+    }
+
+    .css-15dnat5-MuiTableRow-root.Mui-selected {
+        background-color: white;
+    }
+
+    .MuiTableBody-root {
+        .MuiTableCell-root {
+            i:first-letter {
+                text-transform: uppercase
+            }
+        }
+
+        .MuiTableCell-root:first-letter {
+            text-transform: uppercase
+        }
+
+        .react-select {
+            text-transform: capitalize;
+        }
+    }
+
+    .react-select {
+        outline: initial;
+        box-shadow: none;
+
+        .ActiveClass {
+            color: #31C52B;
+        }
+
+        .InactiveClass {
+            color: #FF2F2F;
+        }
+
+        .react-select__control {
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            outline: initial;
+            box-shadow: none;
+            width: 116px !important;
+            height: 45px;
+            font-weight: 600;
+
+            .css-15lsz6c-indicatorContainer:focus {
+                padding: 0px 8px 0px 0px;
+            }
+
+            .css-1xc3v61-indicatorContainer {
+                padding: 0px 8px 0px 0px;
+            }
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__indicator-separator {
+            display: none;
+        }
+
+        .react-select__dropdown-indicator {
+            svg {
+                width: 20px;
+                height: 20px;
+                fill: #74613C;
+            }
+        }
+
+        .react-select__control--is-focused.react-select__control--menu-is-open {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .ViewEditNotClick {
+        color: #74613C;
+        width: 65px;
+        cursor: no-drop;
+    }
+
+    .ViewEditClick {
+        color: #74613C;
+        width: 65px;
+        cursor: pointer;
+    }
+
+    .View {
+        color: #74613C;
+        cursor: pointer;
+        text-transform: capitalize !important;
+    }
+
+    .paginationBlock {
+
+        .css-1jqq78o-placeholder {
+            color: #000000 !important;
+        }
+
+        .rowsSelect {
+
+            .react-select__control {
+                width: 62px !important;
+
+                .css-1xc3v61-indicatorContainer {
+                    padding: 0px 10px 0px 0px !important;
+                }
+
+                .css-15lsz6c-indicatorContainer {
+                    padding: 0px 10px 0px 0px !important;
+                }
+            }
+        }
+    }
+
+}
